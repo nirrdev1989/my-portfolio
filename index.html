@@ -7,32 +7,182 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
    <script src='https://kit.fontawesome.com/9ef62b620e.js' crossorigin='anonymous'></script>
-   <title>Portfilio</title>
+   <title>Portfilio-ruslan-nir-yakobov</title>
 </head>
 
 <body>
 
-   <div class="scroll-up-btn" title="Scroll Up">
-      <i class="fas fa-angle-up"></i>
-   </div>
-
    <div class="contact-btn" title="Contact">
-      <i class="fas fa-phone-volume"></i>
+      <a href="#contact"><i class="fas fa-phone-volume"></i></a>
    </div>
 
-   <section class="main" id="main">
-      <div class="main-grid">
-         <div class="main-img">
-            <img src="./me/me2.jpg" alt="">
+   <div class="projects-btn" title="Projects">
+      <a href="#projects"><i class="fas fa-folder"></i></a>
+   </div>
+
+   <div class="home-btn" title="Home">
+      <a href="#home"> <i class="fas fa-home"></i></a>
+   </div>
+
+   <div class="project-popup">
+      <div class="close-popup-btn">
+         <i class="fa fa-times"></i>
+      </div>
+
+      <div class="project-more-info">
+         <span style="font-size:20px; margin-bottom:1rem" class="project-popup-titile"></span>
+         <div class="project-popup-wrapper">
+            <div class="project-popup-description">
+               <div class="project-popup-description-text">
+                  <span style="font-size: 17px;">Description:</span>
+                  <p class="d-text"></p>
+               </div>
+               <div class="project-popup-description-technologies">
+                  <span style="font-size: 17px;">Using:</span>
+                  <p class="d-technologies"></p>
+               </div>
+               <div class="project-popup-description-responsibility">
+                  <span style="font-size: 17px;">Responsibility:</span>
+                  <p class="d-responsibility"></p>
+               </div>
+               <div class="project-popup-description-links">
+                  <span style="font-size: 17px;">Links:</span>
+                  <p class="d-links">
+                     <a class="github-link" href="" target="_blank"></a>
+                     <br>
+                     <a class="website-link" href="" target="_blank"></a>
+                  </p>
+               </div>
+            </div>
          </div>
       </div>
-      <div class="main-row">
-         <div class="main-info">
+   </div>
 
+   <div class="project-popup-images">
+      <div class="close-popup-images-btn">
+         <i class="fa fa-times"></i>
+      </div>
+
+      <div class="arrow-left-slider-btn">
+         <i class="fas fa-arrow-circle-left"></i>
+      </div>
+
+      <div class="arrow-right-slider-btn">
+         <i class="fas fa-arrow-circle-right"></i>
+      </div>
+
+      <div class="popup-images-slider">
+         <div class="popup-images-slider-img-wrapper">
+            <img src="" alt="">
+         </div>
+      </div>
+   </div>
+
+
+   <section class="home" id="home">
+      <div class="contact-icons">
+         <h2>
+            Nir Yakobov
+         </h2>
+         <p class="social-links">
+            <a href="https://github.com/nirrdev1989" class="github" target="_blank">
+               <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ruslan-nir-yakobov-82ab4b1b4/" class="linkedin" target="_blank">
+               <i class="fab fa-linkedin"></i>
+            </a>
+         </p>
+      </div>
+      <div class="home-grid">
+         <div class="home-about">
+            <div class="home-img center-element">
+               <img src="./me/meok.jpg" alt="">
+            </div>
+            <div class="about-info">
+               <span class="about-info-title">About me</span>
+               <p>
+                  My name is Nir Yakobov. I am a full stack web developer
+                  well-versed in the following languages and
+                  technologies:
+                  <span
+                     style="font-size: 14x !important; color: black;font-family:'Noticia Text', serif; border: none;">
+                     HTML, CSS, JavaScript, TypeScript, React, Redux, Next.js, Angular, Rxjs,
+                     Node.js,
+                     MongoDB, SQL, Express
+                  </span>
+                  and many
+                  more.
+               <p>
+                  Please visit my <a
+                     style="border-bottom: solid 2px var(--primary-blue); font-size: 18px; color: black;font-family:'Noticia Text', serif;"
+                     href="#projects"> Projects </a> Portfolio section, which includes the top projects I
+                  built in the past.
+                  If you want to turn your valuable ideas you have, into actual value in the real world, let me help
+                  you
+                  make those ideas a valuable reality.
+                  Contact me here for free advice on your venture!
+               </p>
+               </p>
+               <a class="btn download-cv-btn" href="./NirRuslanYakobovResume.pdf" target="_blank">Download CV</a>
+            </div>
+         </div>
+
+         <div class="home-skills">
+            <div class="skills-info">
+               <span class="stills-info-title">
+                  Experience / Education
+               </span>
+               <ul>
+                  <li> 2019-2020: <span>Hi-Tech College</span> </li>
+                  <li> 2020-2021: <span>Online, including Udemy courses</span></li>
+                  <li>2020-2021: <span>Mashlimim Lehinuch</span> </li>
+                  <li>2021: <span>The Public Knowledge Workshop</span></li>
+                  <li>2021: <span>Private lessons for beginners</span> </li>
+                  <li>2019-2021: <span>Self projects</span></li>
+               </ul>
+            </div>
          </div>
       </div>
    </section>
 
+   <section class="projects" id="projects">
+      <div class="projects-title">
+         <span style="font-size: 20px;">
+            Projects
+         </span>
+      </div>
+      <div class="projects-grid">
+
+      </div>
+   </section>
+
+   <section class="contact" id="contact">
+      <div class="contact-title">
+         <span style="font-size: 20px;">
+            Contact me
+         </span>
+      </div>
+
+      <div class="contact-info">
+         <div class="contact-email">
+            <p><span style="font-size: 20px;">
+                  <a class="email-btn" href="mailto:nirkuba19999@gmail.com">nirkuba19999@gmail.com</a></span>
+            </p>
+         </div>
+         <p style="margin-bottom: 1rem;"><a href="mailto:nirkuba19999@gmail.com" class="btn btn-send-mail">Send Mail</a>
+         </p>
+         <p class="social-links">
+            <a href="https://github.com/nirrdev1989" class="github" target="_blank">
+               <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ruslan-nir-yakobov-82ab4b1b4/" class="linkedin" target="_blank">
+               <i class="fab fa-linkedin"></i>
+            </a>
+         </p>
+      </div>
+   </section>
+
+   <p class="copyright"> <span> ©2021 Ruslan-Nir Yakobov</span></p>
 
    <script src="data.js"></script>
    <script src="utils.js"></script>
