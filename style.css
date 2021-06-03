@@ -374,13 +374,12 @@ section {
    width: 100%;
    overflow: auto;
    height: 90%;
-   /* padding: 1rem; */
-   /* padding: 0.5rem; */
 }
 
 .project-popup-images.open,
 .project-popup.open {
    left: 0;
+   overflow: hidden !important;
 }
 
 .project-popup-images .close-popup-images-btn,
@@ -513,20 +512,20 @@ section {
 }
 
 
-@media (max-width: 900px) {
-}
-
 @media (max-width: 700px) {
+   .arrow-left-slider-btn.show {
+      left: 30%;
+      top: 70%;
+   } 
+   .arrow-right-slider-btn.show {
+      right: 30%;
+      top: 70%;
+   }
+   .contact-icons h2 {
+      font-size: 20px;
+   }
    .social-links span {
       font-size: 15px;
-   }
-   .arrow-left-slider-btn {
-      left: 30%;
-      top: 60%;
-   } 
-   .arrow-right-slider-btn {
-      right: 30%;
-      top: 60%;
    }
    .home-grid {
       grid-template-columns: 100%;
@@ -551,7 +550,7 @@ section {
       height: 30px;
       right: 10px;
    }
-   .home-skills .skills-info span,
+   .home-skills .skills-info .stills-info-title,
    .home-about .about-info span {
         font-size: 18px;
    }
@@ -593,5 +592,16 @@ section {
    .projects-grid {
       grid-template-columns: auto;
    }
+}
 
+
+@media (max-width: 550px) {
+   .arrow-left-slider-btn.show {
+      left: 30%;
+      top: 60%;
+   } 
+   .arrow-right-slider-btn.show {
+      right: 30%;
+      top: 60%;
+   }
 }

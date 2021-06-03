@@ -39,16 +39,19 @@ function prevItem(event) {
 
 
 function closePopup() {
+   showScroll(true)
    popupContainer.classList.remove('open')
 }
 
 function closePopupImages() {
+   showScroll(true)
    popupContainerImages.classList.remove('open')
    document.querySelector('.arrow-left-slider-btn').classList.remove('show')
    document.querySelector('.arrow-right-slider-btn').classList.remove('show')
 }
 
 function openPopupImages(event) {
+   showScroll(false)
    imageSlideIndex = 0
    currentProject = null
    popupContainerImages.classList.add('open')
@@ -68,6 +71,7 @@ function openPopupImages(event) {
 }
 
 function openPopup(event) {
+   showScroll(false)
    popupContainer.classList.add('open')
 
    const projectId = event.target.getAttribute('data-projectid')
@@ -99,15 +103,6 @@ function openPopup(event) {
 }
 
 function showScroll(show) {
-   if (show) {
-
-   }
-   document.documentElement.scrolling = 'no'
+   console.log(document.documentElement.style.overflow)
+   document.documentElement.style.overflow = show ? 'unset' : 'hidden'
 }
-
-function clearContaiber(container) {
-   while (container.firstChild) {
-      container.removeChild(container.firstChild)
-   }
-}
-
