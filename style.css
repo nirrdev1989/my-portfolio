@@ -39,8 +39,11 @@
 
 html {
    scroll-behavior: smooth;
-   background-color: whitesmoke;
+   /* background-color: whitesmoke; */
    font-family: 'Noticia Text', serif;
+   background: rgb(2,0,36);
+   
+   background: linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(121,9,98,1) 51%, rgba(0,212,255,1) 100%);
 }
 
 a {
